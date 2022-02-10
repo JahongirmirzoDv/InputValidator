@@ -2,17 +2,18 @@
 test-lib
 [![](https://jitpack.io/v/JahongirmirzoDv/InputValidator.svg)](https://jitpack.io/#JahongirmirzoDv/InputValidator)
 
-Installation
-add your gradle.settings
+##Installation
+add your settings.gradle
 
-maven { url 'https://jitpack.io' }
+```maven { url 'https://jitpack.io' }```
 
-add dependency
-implementation 'com.github.JahongirmirzoDv:InputValidator:1.0'
+##add dependency
+```implementation 'com.github.JahongirmirzoDv:InputValidator:1.0'```
 
-Simple Example
+#Simple Example
 
 xml file
+```
     <com.example.inputvalidator.EdittextValidator
         android:id="@+id/email_address"
         android:layout_width="match_parent"
@@ -20,10 +21,10 @@ xml file
         android:layout_marginBottom="16dp"
         app:editTextHint="email"
         app:inputType="email" />
-        
+   ```     
         
 Activity class
-
+```
  binding.emailAddress.editText.doOnTextChanged { text, start, before, count ->
             if (!Patterns.EMAIL_ADDRESS.matcher(text.toString()).matches()) {
                 binding.emailAddress.setError(true)
@@ -32,3 +33,4 @@ Activity class
                 binding.emailAddress.setError(false)
             }
 }
+```
