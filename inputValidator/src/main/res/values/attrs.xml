@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StyleInputEditText">
+        <attr name="text" format="string" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="leftIcon" format="reference" />
+        <attr name="editTextHint" format="string" />
+        <attr name="inputType" format="string"/>
+        <attr name="hasSeparator" format="boolean"/>
+        <attr name="maxLength" format="integer"/>
+        <attr name="hasSingleLine" format="boolean"/>
+    </declare-styleable>
+
+        <declare-styleable name="MultiSpinnerSearch">
+            <attr name="hintText" format="string"/>
+        </declare-styleable>
+
+</resources>
